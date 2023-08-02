@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>网页布局</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        /* 标签 */
+        body{
+            background-color:cornsilk;
+        }
+        /* 布局 */
+        .quanju{
+            width: 500px;
+            margin: 0 auto;
+        }
+        .header{
+            background-color:#FFA500;
+            text-align: center;
+            width: 500px;
+            height: 40px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+        .menu{
+            background-color:#FFD700;
+            height:200px;
+            width:100px;
+            float:left;
+            text-align:left;
+        }
+        .content{
+            background-color:#EEEEEE;
+            height:200px;
+            width:300px;
+            float:left;
+        }
+        .right{
+            background-color: coral;
+            float: right;
+            width: 100px;
+            height: 200px;
+        }
+        .footer{
+            background-color: bisque;
+            width: 500px;
+            height: 80px;
+            clear: both;
+        }
+        /* 字体 */
+        .tetx_right{
+            text-align: left;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div id="quanju" class="quanju">
+
+        <div id="header" class="header">
+                <strong>导航栏</strong>            
+        </div>
+
+        <div id="menu" class="menu">
+            <ul>
+                <li><a href="./Unicorn_Homepage.html">首页</a></li>
+                <li>独角兽高达</li>
+                <li>牛高达</li>
+                <li>自由高达</li>
+            </ul>
+        </div>
+
+        <div id="content" class="content">
+            <video src="./media/完美独角兽.mp4" controls loop muted autoplay width="300px" height="200px"></video>
+        </div>
+
+        <div id="right" class="right">
+            <form action="">
+                性别：
+                <br>
+                <input type="radio" name="sex"  id="man" checked>
+                <label for="man">男</label>
+                <input type="radio" name="sex" id="woman">
+                <label for="woman">女</label>
+                <br>
+                <select>
+                    <option>北京</option>
+                    <option>上海</option>
+                    <option selected>长沙</option>
+                    <option>武汉</option>
+                    <option>广州</option>
+                </select>
+                <button type="reset">重置</button>
+            </form>
+        </div>
+
+        <div id="footer" class="footer">
+            <form action="">
+                账号：<input type="text" placeholder="邮箱">
+                <br>
+                密码：<input type="password" placeholder="数字或英文">
+                <br>
+                <button type="submit">登录（目前无效）</button>
+                <button type="reset">重置</button>
+            </form>
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <!-- <iframe src="./Unicorn_Homepage.html" width="300px" height="200px" frameborder="0"></iframe>
+    <br>
+    <hr> -->
+
+</body>
+</html>
